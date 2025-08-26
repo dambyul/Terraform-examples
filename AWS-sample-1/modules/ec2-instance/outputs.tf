@@ -1,0 +1,9 @@
+output "instance_id"       { value = aws_instance.this.id }
+output "instance_arn"      { value = aws_instance.this.arn }
+output "private_ip"        { value = aws_instance.this.private_ip }
+output "public_ip"         { value = try(aws_eip.this[0].public_ip, aws_instance.this.public_ip) }
+output "public_dns"        { value = aws_instance.this.public_dns }
+output "security_group_id" { value = aws_security_group.this.id }
+output "ami_id"            { value = aws_instance.this.ami }
+output "key_pair_name"     { value = aws_instance.this.key_name }
+output "iam_instance_profile_name" { value = aws_instance.this.iam_instance_profile }
