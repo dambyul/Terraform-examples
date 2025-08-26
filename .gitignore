@@ -1,0 +1,10 @@
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+jeonbuk-airflow.pem
+jeonbuk-bastion.pem
+.terraform.tfstate.lock.info
+terraform.tfstate.backup
+etc/
+providers.tf
+prod.tfvars
