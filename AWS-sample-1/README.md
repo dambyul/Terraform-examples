@@ -13,6 +13,10 @@
     - Airflow Host (r7g.large, Ubuntu 22.04 arm64, 프라이빗 서브넷에 위치, SG는 Bastion SG에서만 SSH 및 포트 31000 허용)
 - Elastic IP
 
+## 아키텍처
+![AWS Architecture](https://github.com/dambyul/Terraform-examples/blob/AWS-sample-1/AWS-sample-1/aws-example-1.png)
+- Apache Airflow는 EC2 인스턴스와 RDS, S3 사이의 연결을 위해 표시한 것으로 별도로 설치 및 구성이 필요
+
 ## Quick start
 ```bash
 cd envs/prod
