@@ -42,8 +42,8 @@ variable "azs" {
   type        = list(string)
   description = "사용할 AZ 목록"
   validation {
-    condition     = length(var.azs) >= 2
-    error_message = "최소 2개 AZ를 지정하세요."
+    condition     = length(var.azs) >= 1
+    error_message = "최소 1개 AZ를 지정하세요."
   }
 }
 

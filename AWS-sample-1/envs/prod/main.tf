@@ -147,6 +147,16 @@ resource "aws_security_group_rule" "airflow_ui_from_bastion" {
   source_security_group_id = module.ec2_bastion.security_group_id
 }
 
+# bastion → airflow: Grafana UI(32000 프록시)
+resource "aws_security_group_rule" "grafana_ui_from_bastion" {
+  type                     = "ingress"
+  from_port                = 32000
+  to_port                  = 32000
+  protocol                 = "tcp"
+  security_group_id        = module.ec2_airflow.security_group_id
+  source_security_group_id = module.ec2_bastion.security_group_id
+}
+
 # ─────────────── RDS MySQL ───────────────
 module "rds" {
   source = "../../modules/rds-mysql"

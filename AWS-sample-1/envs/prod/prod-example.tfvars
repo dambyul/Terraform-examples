@@ -13,7 +13,7 @@ vpc_cidr = "10.10.0.0/16"
 azs      = ["ap-northeast-2a", "ap-northeast-2c"]
 
 # AWS 키페어 생성 후 할당
-bastion_key_pair_name = "your-bastion-key" 
+bastion_key_pair_name = "your-bastion-key"
 airflow_key_pair_name = "your-airflow-key"
 
 public_subnet_cidrs      = ["10.10.0.0/24", "10.10.1.0/24"]
