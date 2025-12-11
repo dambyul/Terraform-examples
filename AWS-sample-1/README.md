@@ -1,6 +1,6 @@
 # Terraform 기반 AWS 구축 스크립트
 
-이 리포지토리는 **서울 리전(ap-northeast-2)**에 운영용 인프라를 구성함.
+이 리포지토리는 **ap-northeast-2**에 운영용 인프라를 구성함.
 
 - VPC: Public/App/DB 서브넷, IGW, 단일 NAT Gateway
 - VPC Endpoints:
